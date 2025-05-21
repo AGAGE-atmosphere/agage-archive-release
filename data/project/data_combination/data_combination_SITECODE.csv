@@ -1,0 +1,8 @@
+# File specifying when to use the various instruments
+# A blank entry in either the start or end date means that the time is unbounded at that side
+# Time periods can overlap if you want to keep both instruments
+# An x indicates that this instrument should not be included in timeseries for this species
+# Date format should be YYYY-MM-DD HH:MM
+# NOTE: ENSURE CELLS ARE FORMATTED AS TEXT NOT DATES. IF PASTING VALUES ENSURE YOU "MATCH DESTINATION FORMATTING" TO PREVENT EXCEL FROM CONVERTING TO DATE AND TIME
+Species,INSTRUMENT1 start,INSTRUMENT2 end,INSTRUMENT2 start,INSTRUMENT2 end
+ch4,x,x,2024-01-10 04:30,
