@@ -3,6 +3,7 @@ import os
 
 from agage_archive.config import Paths, data_file_path
 from agage_archive.run import run_all
+from agage_archive.util import archive_to_csv
 
 
 def preprocess():
@@ -49,6 +50,11 @@ if __name__ == "__main__":
     print("####################################")
     print("#####Processing public archive######")
     print("####################################")
-    run_all("agage", public=True)
+    run_all("agage")
+
+    print("####################################")
+    print("#####Converting to csv######")
+    print("####################################")
+    archive_to_csv("agage")
 
     print(f"Time taken: {time.time() - start_time:.2f} seconds")
