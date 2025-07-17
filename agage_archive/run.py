@@ -43,7 +43,7 @@ def preprocess():
 if __name__ == "__main__":
 
     # Preprocess data files
-    # preprocess()
+    preprocess()
 
     start_time = time.time()
 
