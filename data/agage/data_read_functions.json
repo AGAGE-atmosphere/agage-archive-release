@@ -10,6 +10,8 @@
     "GCMS-Medusa-flask": "read_gcwerks_flask",
     "GCMS-Magnum": "read_gcms_magnum",
     "Picarro": "read_nc",
+    "Picarro-1": "read_nc",
+    "Picarro-2": "read_nc",
     "LGR": "read_nc",
     "GCTOFMS": "read_nc"
 }
