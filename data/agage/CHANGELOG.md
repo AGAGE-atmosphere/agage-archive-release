@@ -4,10 +4,11 @@ Notable changes to this the AGAGE dataset will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
-## [Unreleased]
+## [20250721] - 2025-07-21
 
 ### Changed
-- Data files now have a more uniform set of variables: mf_count, instrument_type, etc. are included in all files, whether data are present or not
+- Data have mostly been updated through July 2024
+- Data files now have a more uniform set of variables: mf_count, instrument_type, etc. are included in all files, whether strictly required or not
 
 
 ## [20250123] - 2025-01-23
