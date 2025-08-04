@@ -12,6 +12,7 @@ July 2025 update of the ALE/GAGE/AGAGE data archive. Data were most recently rev
 - Data updated through July 2024 for most compounds
 - Data files now have a more uniform set of variables: mf_count, instrument_type, etc. are included in all files, whether strictly required or not
 - Small amount of MHD CF4 data removed June - September 2022, due to potential trap icing issue that needs investigating
+- Carbon monoxide (CO) data from MHD and CGO are now released on the calibration scales used by the individual labs: MHD on WMO-X2014A and CGO on CSIRO-2020.
 
 
 ## [20250123] - 2025-01-23
