@@ -7,7 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 ## [20250721] - 2025-07-21
 
 ### Changed
-- Data have mostly been updated through July 2024
+- Data updated through July 2024 for most compounds
 - Data files now have a more uniform set of variables: mf_count, instrument_type, etc. are included in all files, whether strictly required or not
 
 
