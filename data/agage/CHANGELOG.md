@@ -6,6 +6,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
 ## [20250721] - 2025-07-21
 
+July 2025 update of the ALE/GAGE/AGAGE data archive. Data were most recently reviewed at the AGAGE 71 meeting, 9-13 June, 2025.
+
 ### Changed
 - Data updated through July 2024 for most compounds
 - Data files now have a more uniform set of variables: mf_count, instrument_type, etc. are included in all files, whether strictly required or not
