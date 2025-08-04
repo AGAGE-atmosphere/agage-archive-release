@@ -9,6 +9,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 ### Changed
 - Data updated through July 2024 for most compounds
 - Data files now have a more uniform set of variables: mf_count, instrument_type, etc. are included in all files, whether strictly required or not
+- Small amount of MHD CF4 data removed June - September 2022, due to potential trap icing issue that needs investigating
 
 
 ## [20250123] - 2025-01-23
