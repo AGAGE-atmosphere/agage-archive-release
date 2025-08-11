@@ -16,7 +16,7 @@ def preprocess():
 
     paths = Paths("agage")
 
-    md_folder = data_file_path("", "agage", sub_path=paths.md_path)
+    md_folder = data_file_path("", "agage", sub_path=paths.__getattribute__("GCMD_path"))
     # For CGO H2 data, the PDD is mis-labelled (Issue #47)
     if (md_folder / "AGAGE-GCMD_CGO_h2_pdd.nc").exists():
         os.system(f"cp {md_folder / 'AGAGE-GCMD_CGO_h2_pdd.nc'} {md_folder / 'AGAGE-GCPDD_CGO_h2.nc'}")
@@ -43,7 +43,7 @@ def preprocess():
 if __name__ == "__main__":
 
     # Preprocess data files
-    # preprocess()
+    preprocess()
 
     start_time = time.time()
 

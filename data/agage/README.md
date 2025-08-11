@@ -1,22 +1,22 @@
 
 #  AGAGE Data README file
-This archive contains the complete AGAGE/ALE/GAGE dataset. 
+This archive contains the complete AGAGE/ALE/GAGE dataset. Measurements are made of dry air mole fractions of atmospheric trace gases measured at various AGAGE stations and their predecessors.
 
-The archive is compiled from early ALE/GAGE files combined with AGAGE files output from GCWerks software. The code for processing and standardising these data is at https://github.com/mrghg/agage-archive. The ALE/GAGE files were created by Derek Cunnold's team at Georgia Tech (GA Tech.) in the early 1990s, and are archived at https://github.com/mrghg/agage-archive/tree/main/data/agage/ale_gage_sio1993. These data were themselves converted from earlier scales to the Scripps Institution of Oceanography (SIO) 1993 scale (SIO-93; see Cunnold et al., 1994 and Prinn et al., 2000). The GA Tech. files are reprocessed here and converted to more recent scales. See the Methodology notes in the agage-archive repository for details.
+The archive is compiled from early ALE/GAGE files combined with AGAGE files output from the GCWerks software. The code for processing and standardising these data is at https://github.com/AGAGE-atmosphere/agage-archive and https://github.com/AGAGE-atmosphere/agage-archive-release. The ALE/GAGE files were created by Derek Cunnold's team at Georgia Tech (GA Tech.) in the early 1990s, and are are included in the AGAGE data specification repository https://github.com/AGAGE-atmosphere/agage-archive-release/tree/main/data/agage/ale_gage_sio1993. These data were themselves converted from earlier scales to the Scripps Institution of Oceanography (SIO) 1993 calibration scale (SIO-93; see Cunnold et al., 1994 and Prinn et al., 2000). The GA Tech. files are reprocessed into netCDF format here and converted to the most recent calibration scales. See the [Methodology notes](https://github.com/AGAGE-atmosphere/agage-archive/blob/main/docs/ale_gage_notes.md) in the agage-archive repository for details.
 
-The code for reprocessing the AGAGE data is currently maintained by the University of Bristol. Contact matt.rigby@bristol.ac.uk with errors and questions. For questions regarding individual data sources, please contact the relevant AGAGE station PIs (contact details are contained in file metadata).
+The code for reprocessing the AGAGE data is currently maintained by the University of Bristol. Contact matt.rigby@bristol.ac.uk with errors and questions, or, preferably, submit Issues or Pull Requests on Github. For questions regarding individual data sources, please contact the relevant AGAGE station PIs (contact details are contained in file metadata).
 
 # Format and Structure
 
 This archive consists of a set of netCDF files. For information on the netCDF file format see: https://www.unidata.ucar.edu/software/netcdf/
 
-Filenames follow the convention:
+Filenames follow the convention
 
 ```network{-instrument}_sitecode_species_{filetype-}version.nc```
 
-Where the elements in curly brackets are optional, depending on the file.
+where the elements in curly brackets are optional, depending on the file.
 
-Below is an example of the archive structure, showing only CFC-11:
+Below is an example of the archive structure, showing only CFC-11 data:
 
 ```
 .
@@ -106,15 +106,19 @@ Below is an example of the archive structure, showing only CFC-11:
 
 ```
 
-At the first level, the archive is organised by species. The files in this top-level directory are the "default" ALE/GAGE/AGAGE high-frequency records that should be sufficient for most users. Here, high-frequency can refer to the instantaneous or integrated observations on gas chromatography systems, and/or hourly averages from optical instruments. These files may be a combination of multiple instruments for some species. 
+At the first level, the archive is organised by species (in the above example, dry-air mole fractions of chlorofluorocarbon-11, CFC-11). The files in this top-level directory are the "recommended" ALE/GAGE/AGAGE high-frequency records that should be sufficient for most users. Here, high-frequency can refer to the instantaneous or integrated observations on gas chromatography systems, and/or temporal averages from optical instruments (typically hourly). These files may be a combination of multiple instruments (e.g., for CFC-11 at Cape Grim (CGO), the ALE GCMD, the GAGE GCMD and the AGAGE GCMD instruments) based on careful considerations by AGAGE scientists. 
 
-There are sub-directories within each species directory. The ```monthly-baseline``` directory contains monthly mean mole fractions calculated using the AGAGE statistical pollution algorithm (see O'Doherty et al., 2001). The individual flags are contained in the ```baseline-flag``` folder. 
+There are sub-directories within each species directory. 
 
-The ```individual-instrument``` sub-directory contains files for individual ALE/GAGE/AGAGE instruments, several of which have been combined to for the default files for some species and sites.
+The AGAGE statistical pollution algorithm (see O'Doherty et al., 2001) is used to determine “pollution-free” baseline flags for each measurement data point in the species folder, which are given in the ```baseline-flags``` directory.
+
+Based on these baseline flags and the high-frequency measurement data, the resulting “pollution-free” monthly mean mole fractions are given in the ```monthly-baseline``` directory. 
+
+The ```individual-instrument``` sub-directory contains files for individual ALE/GAGE/AGAGE instruments (e.g. ALE GCMS, AGAGE Medusa, etc.). For some species and sites, several of these have been combined for the recommended files. The folder again contains sub-folders with ```baseline-flags``` data files and ```monthly-baseline``` data for these individual instruments.
 
 # AGAGE Data Statement:
 
-These data are made available to the scientific community and public to improve understanding of climate change and ozone depletion and to lead to new scientific insights. AGAGE relies on the ethics and integrity of the user to ensure that AGAGE scientists receive fair credit for their work.
+These data are made available to the scientific community and public to improve understanding of ozone depletion and climate change and to lead to new scientific insights. AGAGE relies on the ethics and integrity of the user to ensure that AGAGE scientists receive fair credit for their work.
 
 If the data are obtained for potential use in a publication or presentation, AGAGE station PIs should be informed at the outset of the proposed work. Station PI contact information is located in the station pages. If the AGAGE data are essential to the work, co-authorship on publications may be appropriate. Manuscripts using the AGAGE data should be sent early to the AGAGE contacts for review before they are submitted for publication, so we can ensure that the quality and limitations of the data are accurately represented.
 
