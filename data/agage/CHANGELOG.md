@@ -4,6 +4,18 @@ Notable changes to this the AGAGE dataset will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
+## [20251230] - 2025-12-30
+
+December 2025 update of the ALE/GAGE/AGAGE data archive. Data were most recently reviewed at the AGAGE 72 meeting, 17-20 December, 2025.
+
+### Changed
+- Data updated up to the end of 2024 for most compounds (end of June 2025 for CH4)
+- TOB HFC-134a data has been withheld while potential local leaks are investigated
+- TOB CF4 data is now released after the invalid periods were flagged
+- GSN records have been extended to more recent dates for some species
+- THD Picarro CH4 is withheld for 2025 while a potential calibration issue is investigated
+
+
 ## [20250721] - 2025-07-21
 
 July 2025 update of the ALE/GAGE/AGAGE data archive. Data were most recently reviewed at the AGAGE 71 meeting, 9-13 June, 2025.
