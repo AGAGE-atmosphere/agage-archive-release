@@ -4,4 +4,3 @@
 Species,Instrument,Start,End,Notes,Combined_only
 hfc-32,GCMS-Medusa,2014-03-01 00:00,2015-08-31 00:00,From Ray Wang's public release tables AGAGE 66,
 hfc-125,GCMS-Medusa,2014-03-01 00:00,2015-08-31 00:00,From Ray Wang's public release tables AGAGE 66,
-ch4,GCMD,2019-10-17 00:00,2025-01-01 00:00,Use Picarro data for combined files,Y
