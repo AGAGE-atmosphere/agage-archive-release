@@ -4,6 +4,21 @@ Notable changes to this the AGAGE dataset will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)
 
+## [20260716] - 2026-07-16
+
+July 2026 update of the ALE/GAGE/AGAGE data archive. Data were most recently reviewed at the AGAGE 73 meeting, 15-18 June, 2026.
+
+### Changed
+- Data updated through June 2025 for most compounds at most sites (end of 2025 for CH4)
+- HFOs 1234yf, 1234zee and hcfo-1233zde released (Vollmer et al., 2026: https://doi.org/10.5194/acp-26-6993-2026)
+- 1,2 dichloroethane (ClH2CH2Cl, clch2ch2cl) released (Pitt, Rust et al., 2026: https://doi.org/10.5194/acp-26-10167-2026)
+- CMN HFC-23 ADS data released
+- MUG (Mt. Mugogo, Rwanda) CH4 data released
+- Previously withheld ZEP HCFC-22 Medusa data released after 2024-05-31
+- Previously withheld THD CH4 Picarro data released after 2024-12-31
+- Previously withheld TAC HFC-4310mee released data after 2023-06-20
+
+
 ## [20251230] - 2025-12-30
 
 December 2025 update of the ALE/GAGE/AGAGE data archive. Data were most recently reviewed at the AGAGE 72 meeting, 17-20 December, 2025.
