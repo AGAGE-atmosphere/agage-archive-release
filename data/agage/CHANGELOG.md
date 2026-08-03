@@ -17,6 +17,7 @@ July 2026 update of the ALE/GAGE/AGAGE data archive. Data were most recently rev
 - Previously withheld ZEP HCFC-22 Medusa data released after 2024-05-31
 - Previously withheld THD CH4 Picarro data released after 2024-12-31
 - Previously withheld TAC HFC-4310mee released data after 2023-06-20
+- Data are now processed against the agage-archive v0.3.0, which includes several bug fixes
 
 
 ## [20251230] - 2025-12-30
