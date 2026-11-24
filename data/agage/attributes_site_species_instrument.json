@@ -67,6 +67,11 @@
             "GCMS-Medusa": {
                 "instrument_comment": "WARNING: For this species, AGAGE MD measurements are of higher frequency with significantly better precisions and also appear internally more consistent than AGAGE Medusa measurements. Please discuss with data owner before use."
             }
+        },
+        "ch4": {
+            "Picarro": {
+                "instrument_comment": "NOTE: Optical analysers used within the AGAGE network are only sensitive to the main methane isotopologue. The mole fractions reported represent total methane (all isotopologues) but assume a fixed isotopologue ratio determined by the approach used to propagate the calibration scale."
+            }
         }
     },
     "TOB": {
@@ -95,6 +100,37 @@
         "cfc-12": {
             "GCMS-Medusa": {
                 "instrument_comment": "WARNING: For this species, AGAGE MD measurements are of higher frequency and also appear internally more consistent than AGAGE Medusa measurements. Please discuss with data owner before use."
+            }
+        }
+    },
+    "CGO": {
+        "ch4": {
+            "Picarro-1": {
+                "instrument_comment": "NOTE: Optical analysers used within the AGAGE network are only sensitive to the main methane isotopologue. The mole fractions reported represent total methane (all isotopologues) but assume a fixed isotopologue ratio determined by the approach used to propagate the calibration scale."
+            },
+            "Picarro-2": {
+                "instrument_comment": "NOTE: Optical analysers used within the AGAGE network are only sensitive to the main methane isotopologue. The mole fractions reported represent total methane (all isotopologues) but assume a fixed isotopologue ratio determined by the approach used to propagate the calibration scale."
+            }
+        }
+    },
+    "THD": {
+        "ch4": {
+            "Picarro": {
+                "instrument_comment": "NOTE: Optical analysers used within the AGAGE network are only sensitive to the main methane isotopologue. The mole fractions reported represent total methane (all isotopologues) but assume a fixed isotopologue ratio determined by the approach used to propagate the calibration scale."
+            }
+        }
+    },
+    "RPB": {
+        "ch4": {
+            "Picarro": {
+                "instrument_comment": "NOTE: Optical analysers used within the AGAGE network are only sensitive to the main methane isotopologue. The mole fractions reported represent total methane (all isotopologues) but assume a fixed isotopologue ratio determined by the approach used to propagate the calibration scale."
+            }
+        }
+    },
+    "RCO": {
+        "ch4": {
+            "Picarro": {
+                "instrument_comment": "NOTE: Optical analysers used within the AGAGE network are only sensitive to the main methane isotopologue. The mole fractions reported represent total methane (all isotopologues) but assume a fixed isotopologue ratio determined by the approach used to propagate the calibration scale."
             }
         }
     }
